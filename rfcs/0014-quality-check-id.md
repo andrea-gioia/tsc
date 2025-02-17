@@ -62,7 +62,7 @@ quality:
 | Key                                  | UX label                  | Required | Description                                                                                                                                                                                |
 |--------------------------------------|---------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |name                                    |Name                 |Yes       | The name of the quality check. It MUST be unique within the quality checks defined on a schema entity. It's RECOMMENDED to use a camel case formatted string.
-|fqn                                    |Name                 |Yes       |The unique universal idetifier of the quality check. It MUST be a URN of the form urn:odcs:contracts:{product-name}:{contract-major-version}:schema:{json-pointer-to element}:checks:{check-name}. 
+|fqn                                    |Name                 |Yes       |The unique universal idetifier of the quality check. It MUST be a URN of the form `urn:odcs:contracts:{product-name}:{contract-major-version}:schema:{json-pointer-to element}:checks:{check-name}`. 
 
 we can also add version 
 
