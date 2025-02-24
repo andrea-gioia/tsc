@@ -8,6 +8,8 @@ Champion: Simon Harrer
 
 ## Motivation
 
+TODO 
+
 A quality check is hard to identify at the moment. 
 
 ```yaml
@@ -41,11 +43,18 @@ quality:
 
 ### Add an `id` field
 
-Add an `id` field of type `string` defined as the term [identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier) in Dublin Core Vocabulary. We can also consider suggesting a preferred identification system, like UUID, while leaving the final decision up to the user. 
+Add an `id` field of type `string` defined as the term [identifier](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/identifier) in Dublin Core Vocabulary as shown in the following table.
 
 | Key                                  | UX label                  | Required | Description                                                                                                                                                                                |
 |--------------------------------------|---------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |id                                    |Identifier                 |Yes       |Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs.
+
+. We can also consider suggesting a preferred identification system, such as:
+
+- HTTP URI () as recommended by XXX
+- UUID ([RFC-4122](https://www.rfc-editor.org/rfc/rfc4122.html))
+
+while leaving the final decision up to the user. 
 
 **Pros:**
 
