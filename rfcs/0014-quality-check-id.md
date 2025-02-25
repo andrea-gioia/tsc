@@ -47,11 +47,11 @@ Add an `id` field of type `string` defined as the term [identifier](https://www.
 
 | Key                                  | UX label                  | Required | Description                                                                                                                                                                                |
 |--------------------------------------|---------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|id                                    |Identifier                 |Yes       |Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). Persistent identifiers should be provided as HTTP URIs.
+|id                                    |Identifier                 |Yes       |Recommended practice is to identify the resource by means of a string conforming to an identification system. Examples include International Standard Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name (URN). *Persistent identifiers SHOULD be provided as HTTP URI*s.
 
 . We can also consider suggesting a preferred identification system, such as:
 
-- HTTP URI () as recommended by XXX
+- HTTP URI ([RFC-3986](https://datatracker.ietf.org/doc/html/rfc3986)) as recommended by W3C ([Linked Data](https://www.w3.org/wiki/LinkedData))
 - UUID ([RFC-4122](https://www.rfc-editor.org/rfc/rfc4122.html))
 
 while leaving the final decision up to the user. 
@@ -85,7 +85,7 @@ quality:
     query: |
       SELECT COUNT(*) FROM ${object} WHERE ${property} IS NOT NULL
     mustBeLessThan: 3600
-    id: http://bitol.org/contracts/myContract/1.0.0/schemas/lastName/checks/notNull/1.0.1
+    id: http://bitol.org/contracts/myContract/1.0.0/schemas/lastName/checks/missingValues/1.0.1
 ```
 
 ### Add `name` and `fqn` field
